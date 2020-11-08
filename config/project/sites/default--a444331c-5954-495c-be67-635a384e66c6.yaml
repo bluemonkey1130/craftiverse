@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: Craftiverse
+primary: true
+siteGroup: 6b6971ce-a03d-4845-bda2-d93f3efb5d3a
+sortOrder: 1

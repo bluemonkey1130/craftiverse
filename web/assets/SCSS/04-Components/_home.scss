@@ -1,0 +1,121 @@
+#text-section {
+  margin: 4rem 0;
+
+  .grid-layout {
+    .block {
+      //text-align: center;
+    }
+  }
+}
+
+#tab-section {
+  margin-bottom: 4rem;
+
+  .grid-layout {
+    &.tabs {
+      margin-bottom: 4rem;
+
+      a {
+        text-align: center;
+        transition-property: all;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+
+        &.filter-btn {
+          padding: 1.5rem;
+          color: color(lightgray);
+          border-bottom: 5px solid color(lightgray);
+        }
+        &.active {
+          color: color(blue);
+          border-bottom: 5px solid color(blue);
+          transition-property: all;
+          transition-duration: 200ms;
+          transition-timing-function: ease-out;
+        }
+        &:hover {
+          text-decoration: none;
+          color: color(blue);
+          background-color: color(lightblue);
+          border-bottom: 5px solid color(blue);
+          transition-property: all;
+          transition-duration: 200ms;
+          transition-timing-function: ease-out;
+        }
+      }
+    }
+
+    &.slider-channels {
+      margin: 1rem -0.5rem;
+      .block {
+        margin: 1rem;
+        &:focus{
+          outline: none;
+        }
+        figure {
+          position: relative;
+          margin-bottom: 2rem;
+          overflow: hidden;
+
+          &:hover {
+            img {
+              transition: all 200ms ease-in-out;
+              transform: scale(1.1);
+            }
+          }
+          img {
+            transition: all .2s ease-in-out;
+          }
+        }
+        p{
+          font-size: 1rem;
+        }
+        .button{
+          font-size: 0.9rem;
+          &:hover{
+            border-bottom: 1px solid color(blue);
+
+          }
+        }
+      }
+    }
+  }
+}
+
+#cta-section {
+  background-color: color(blue);
+  padding: 6rem 0;
+
+  .grid-layout {
+    div.block{
+      padding: 3rem 0;
+    }
+    .block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      * {
+        color: color(white);
+      }
+    }
+  }
+}
+#location-section {
+  margin: 4rem 0;
+  .grid-layout {
+    .block {
+      text-align: center;
+      #map{
+        margin-top: 4rem;
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}

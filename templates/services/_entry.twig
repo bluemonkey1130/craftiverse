@@ -1,0 +1,12 @@
+{% extends "index" %}
+{% block content %}
+    <div id="text-section" class="grid-row">
+        <div class="grid-layout two-rem standard has-one-column">
+            <div class="bock">
+                <h1>{{ entry.title }}</h1>
+                {{ entry.richText }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

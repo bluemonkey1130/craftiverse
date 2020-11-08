@@ -1,0 +1,140 @@
+fieldLayouts:
+  dd6a72de-235d-45f6-9acd-c13b6381a58e:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6cff4e3c-62dc-4ed7-89bd-976918723ab5
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: afc606cf-ca53-4856-859f-a9b52222149e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Hero Section'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 6e426b5b-d7ff-4617-9749-f54ecd209e70
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 72d96ef9-05ac-4848-903c-962c8c1b0466
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Text Section'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 41bc5b22-810f-46ea-abaf-28834eb783ca
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8ddb6768-78a4-400e-ba9c-d3537f46662a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eb7fb4cf-2ae4-46cf-adb1-9bde43797eb2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'CTA Section'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: d48ff451-4766-4ecb-8947-141900ff184c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fdba470a-7119-407a-956a-aa673e18caa8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 064aa7a9-3143-428b-9b3f-ecc356d30ed4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Location Section'
+        sortOrder: 4
+handle: home
+hasTitleField: false
+name: Home
+section: 078152bd-07a6-48a9-bba4-f6446df31eba
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

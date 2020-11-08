@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: servicePosts
+name: 'Service Posts'
+propagationMethod: all
+siteSettings:
+  a444331c-5954-495c-be67-635a384e66c6:
+    enabledByDefault: true
+    hasUrls: true
+    template: services/_entry
+    uriFormat: 'services/{slug}'
+type: channel

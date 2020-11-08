@@ -1,0 +1,20 @@
+contentColumnType: string
+fieldGroup: b101b2e5-3692-494a-9a88-a9054f0e26be
+handle: ctaLinkDestination
+instructions: ''
+name: 'CTA Link Destination'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: b101b2e5-3692-494a-9a88-a9054f0e26be
+handle: heroSlides
+instructions: ''
+name: 'Hero Slides'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_heroslides}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

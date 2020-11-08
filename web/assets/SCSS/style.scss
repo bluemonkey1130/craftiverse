@@ -1,0 +1,52 @@
+/* ------------------------------------
+	# IMPORTS
+-------------------------------------- */
+//@import 'node_modules/bootstrap/scss/bootstrap';
+//@import 'node_modules/animate.css/animate';
+//@import 'node_modules/slick-carousel/slick/slick-theme.css';
+//@import 'node_modules/slick-carousel/slick/slick.css';
+
+
+/* ------------------------------------
+	# 01-MIXINS
+-------------------------------------- */
+
+@import '01-Mixins/color';
+@import '01-Mixins/vendor-prefixes';
+@import '01-Mixins/crux';
+@import '01-Mixins/family-mixin';
+@import '01-Mixins/aspect';
+@import '01-Mixins/keyframes';
+
+/* ------------------------------------
+	# 02-SETTINGS
+-------------------------------------- */
+
+@import '02-Settings/variables';
+@import '02-Settings/reset';
+@import '02-Settings/ally';
+
+/* ------------------------------------
+	# 03-BASE
+-------------------------------------- */
+
+@import '03-Base/typography';
+@import '03-Base/grid';
+@import '03-Base/global';
+@import '03-Base/button';
+
+/* ------------------------------------
+	# 05-COMPONENTS
+-------------------------------------- */
+
+@import '04-Components/header';
+@import '04-Components/hero';
+@import '04-Components/home';
+@import '04-Components/footer';
+
+/* ------------------------------------
+	# 05-VENDOR
+-------------------------------------- */
+
+//@import '05-vendor/slick';
+//@import '05-vendor/slick-theme';
