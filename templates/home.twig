@@ -111,25 +111,25 @@
             </div>
         </div>
     </div>
-{#    <script>#}
-{#        // Initialize and add the map#}
-{#        function initMap() {#}
-{#            var iconBase = 'https://georgehawthorne.co.uk/wp-content/uploads/2020/11/marker@0.5x.png';#}
-{#            // The location of New York#}
-{#            const newYork = { lat: 40.713175 , lng: -74.003433};#}
-{#            // The map, centered at  New York#}
-{#            const map = new google.maps.Map(document.getElementById("map"), {#}
-{#                mapId: "7a0d902c2626c4f5",#}
-{#                zoom: 14,#}
-{#                center: newYork,#}
-{#                disableDefaultUI: true,#}
-{#            });#}
-{#            // The marker, positioned at Uluru#}
-{#            const marker = new google.maps.Marker({#}
-{#                position: newYork,#}
-{#                map: map,#}
-{#                icon: iconBase#}
-{#            });#}
-{#        }#}
-{#    </script>#}
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            var iconBase = 'https://georgehawthorne.co.uk/wp-content/uploads/2020/11/marker@0.5x.png';
+            // The location of New York
+            const newYork = { lat: 40.713175 , lng: -74.003433};
+            // The map, centered at  New York
+            const map = new google.maps.Map(document.getElementById("map"), {
+                mapId: "7a0d902c2626c4f5",
+                zoom: 14,
+                center: newYork,
+                disableDefaultUI: true,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: newYork,
+                map: map,
+                icon: iconBase
+            });
+        }
+    </script>
 {% endblock %}
