@@ -20,6 +20,9 @@
         transition-property: all;
         transition-duration: 200ms;
         transition-timing-function: ease-out;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
 
         &.filter-btn {
           padding: 1.5rem;

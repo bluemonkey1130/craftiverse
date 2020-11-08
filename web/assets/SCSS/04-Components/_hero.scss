@@ -5,17 +5,30 @@
     grid-column: 1 / span 14;
     object-fit: cover;
     width: 100%;
-    height: unset;
     max-height: 85vh;
     overflow: hidden;
+    height: 90vh;
+
     video{
-      transform: scale(1.2);
+      transform: scale(1.7);
+      @media (max-width: $medium-large) {
+        transform: scale(1.8);
+      }
+      @media (max-width: $medium) {
+        transform: scale(2);
+      }
+      @media (max-width: $largeTablet) {
+        transform: scale(2.5);
+      }
+      @media (max-width: $tablet) {
+        transform: scale(3.5);
+      }
     }
   }
   .grid-layout {
     z-index: 2;
     &.slider {
-      padding: 8rem 0;
+      padding: 4rem 0;
       grid-template-rows: 1fr 50px;
       grid-row: 1;
       align-items: center;

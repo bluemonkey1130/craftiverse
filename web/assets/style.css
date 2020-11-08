@@ -629,7 +629,7 @@ figcaption p {
     grid-column-start: 3;
     grid-column-end: 13;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 767px) {
     .grid-row .grid-layout.standard {
       grid-column-start: 2;
       grid-column-end: 14;
@@ -1990,14 +1990,42 @@ header.header .grid-layout a.logo .fas {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: unset;
   max-height: 85vh;
   overflow: hidden;
+  height: 90vh;
 }
 
 #hero #my-video video {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+@media (max-width: 1100px) {
+  #hero #my-video video {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+  }
+}
+
+@media (max-width: 1000px) {
+  #hero #my-video video {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@media (max-width: 920px) {
+  #hero #my-video video {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+}
+
+@media (max-width: 767px) {
+  #hero #my-video video {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
 }
 
 #hero .grid-layout {
@@ -2005,7 +2033,7 @@ header.header .grid-layout a.logo .fas {
 }
 
 #hero .grid-layout.slider {
-  padding: 8rem 0;
+  padding: 4rem 0;
   grid-template-rows: 1fr 50px;
   grid-row: 1;
   -webkit-box-align: center;
@@ -2146,6 +2174,15 @@ header.header .grid-layout a.logo .fas {
           transition-duration: 200ms;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #tab-section .grid-layout.tabs a.filter-btn {

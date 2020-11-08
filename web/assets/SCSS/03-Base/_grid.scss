@@ -53,7 +53,7 @@ main {
       &.standard {
         grid-column-start: 3;
         grid-column-end: 13;
-        @media (max-width: $phablet) {
+        @media (max-width: $tablet) {
           grid-column-start: 2;
           grid-column-end: 14;
         }
