@@ -149,7 +149,7 @@ html, body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  font-size: rem(18px);
+  font-size: 1.125rem;
   line-height: 1.4;
   font-family: "Tinos", sans-serif;
   color: #133064;
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-family: "leikoregular", sans-serif;
-  font-size: rem(55px);
+  font-size: 3.4375rem;
   line-height: 1.2;
   font-weight: 300;
   letter-spacing: 3px;
@@ -313,25 +313,25 @@ h1, .h1 {
 
 @media (max-width: 480px) {
   h1, .h1 {
-    font-size: rem(40px);
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 375px) {
   h1, .h1 {
-    font-size: rem(35px);
+    font-size: 2.1875rem;
   }
 }
 
 @media (max-width: 375px) {
   h1, .h1 {
-    font-size: rem(25px);
+    font-size: 1.5625rem;
   }
 }
 
 h2, .h2 {
   font-family: "leikoregular", sans-serif;
-  font-size: rem(40px);
+  font-size: 2.5rem;
   line-height: 1.2;
   font-weight: 300;
   letter-spacing: 3px;
@@ -339,19 +339,19 @@ h2, .h2 {
 
 @media (max-width: 480px) {
   h2, .h2 {
-    font-size: rem(25px);
+    font-size: 1.5625rem;
   }
 }
 
 @media (max-width: 375px) {
   h2, .h2 {
-    font-size: rem(20px);
+    font-size: 1.25rem;
   }
 }
 
 h3, .h3 {
   font-family: "leikoregular", sans-serif;
-  font-size: rem(20px);
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 300;
   letter-spacing: 3px;
@@ -359,19 +359,19 @@ h3, .h3 {
 
 @media (max-width: 480px) {
   h3, .h3 {
-    font-size: rem(20px);
+    font-size: 1.25rem;
   }
 }
 
 @media (max-width: 375px) {
   h3, .h3 {
-    font-size: rem(18px);
+    font-size: 1.125rem;
   }
 }
 
 h4, .h4 {
   font-family: "leikoregular", sans-serif;
-  font-size: rem(18px);
+  font-size: 1.125rem;
   line-height: 1.2;
   font-weight: 300;
   letter-spacing: 3px;
@@ -379,21 +379,21 @@ h4, .h4 {
 
 h5, .h5 {
   font-family: "Tinos", sans-serif;
-  font-size: rem(16px);
+  font-size: 1rem;
   line-height: 1.2;
   font-weight: 300;
 }
 
 h6, .h6 {
   font-family: "Tinos", sans-serif;
-  font-size: rem(8px);
+  font-size: 0.5rem;
   line-height: 1.2;
   font-weight: 300;
 }
 
 p, .paragraph {
   margin: 0 0 1rem 0;
-  font-size: rem(18px);
+  font-size: 1.125rem;
   letter-spacing: 0.1rem;
   line-height: 1.4;
   font-family: "Tinos", sans-serif;
@@ -401,11 +401,11 @@ p, .paragraph {
 }
 
 p--small, .paragraph--small {
-  font-size: rem(14px);
+  font-size: 0.875rem;
 }
 
 button {
-  font-size: rem(18px);
+  font-size: 1.125rem;
 }
 
 ul, ol {
@@ -414,7 +414,7 @@ ul, ol {
 
 ul li, ol li {
   font-family: "Tinos", sans-serif;
-  font-size: rem(16px);
+  font-size: 1rem;
   color: #133064;
   line-height: 1.4;
   vertical-align: middle;
@@ -422,7 +422,7 @@ ul li, ol li {
 }
 
 a {
-  font-family: rem(16px);
+  font-family: 1rem;
 }
 
 em, i {
@@ -441,7 +441,7 @@ blockquote {
 }
 
 figcaption p {
-  font-size: rem(15px);
+  font-size: 0.9375rem;
 }
 
 .breadcrum {
@@ -449,7 +449,7 @@ figcaption p {
   font-family: "Tinos", sans-serif;
   padding: 2rem 0 2rem 0;
   color: #FFFFFF !important;
-  font-size: rem(25px);
+  font-size: 1.5625rem;
   width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -460,7 +460,7 @@ figcaption p {
 }
 
 .breadcrum a {
-  font-size: rem(25px);
+  font-size: 1.5625rem;
 }
 
 .breadcrum a:hover {
@@ -473,7 +473,7 @@ figcaption p {
 }
 
 .breadcrum a.all {
-  font-size: rem(25px);
+  font-size: 1.5625rem;
   font-weight: 900;
   color: #FFFFFF !important;
   white-space: nowrap;
@@ -481,28 +481,28 @@ figcaption p {
 
 @media (max-width: 1000px) {
   .breadcrum {
-    font-size: rem(20px);
+    font-size: 1.25rem;
   }
   .breadcrum a.all, .breadcrum a {
-    font-size: rem(20px);
+    font-size: 1.25rem;
   }
 }
 
 @media (max-width: 920px) {
   .breadcrum {
-    font-size: rem(18px);
+    font-size: 1.125rem;
   }
   .breadcrum a.all, .breadcrum a {
-    font-size: rem(18px);
+    font-size: 1.125rem;
   }
 }
 
 @media (max-width: 800px) {
   .breadcrum {
-    font-size: rem(17px);
+    font-size: 1.0625rem;
   }
   .breadcrum a.all, .breadcrum a {
-    font-size: rem(17px);
+    font-size: 1.0625rem;
   }
 }
 
@@ -511,7 +511,7 @@ figcaption p {
     display: inline-grid;
   }
   .breadcrum a.all {
-    font-size: rem(25px);
+    font-size: 1.5625rem;
   }
   .breadcrum a.all:after {
     font-family: "Font Awesome 5 Free";
@@ -2323,7 +2323,7 @@ footer .grid-layout.contact {
 }
 
 footer .grid-layout.contact .block h3, footer .grid-layout.contact .nav h3 {
-  font-size: rem(20px);
+  font-size: 1.25rem;
 }
 
 footer .grid-layout.contact .block h3 a:hover, footer .grid-layout.contact .nav h3 a:hover {
