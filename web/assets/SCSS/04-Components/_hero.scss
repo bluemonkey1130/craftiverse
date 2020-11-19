@@ -1,13 +1,13 @@
 #hero {
   grid-template-rows: 1fr 50px;
   #my-video {
-    grid-row: 1 / span 2;
     grid-column: 1 / span 14;
-    object-fit: cover;
-    width: 100%;
-    max-height: 85vh;
-    overflow: hidden;
+    grid-row: 1 / span 2;
     height: 90vh;
+    max-height: 85vh;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
 
     video{
       transform: scale(1.7);
@@ -28,12 +28,12 @@
   .grid-layout {
     z-index: 2;
     &.slider {
-      padding: 4rem 0;
-      grid-template-rows: 1fr 50px;
-      grid-row: 1;
       align-items: center;
-      justify-content: center;
       display: inline-flex;
+      grid-row: 1;
+      grid-template-rows: 1fr 50px;
+      justify-content: center;
+      padding: 4rem 0;
       .slick-list {
         .content {
           margin: 0 auto;
@@ -60,42 +60,42 @@
         padding: 0;
 
         .tab-link {
-          text-align: center;
-          display: inherit;
           align-items: center;
           cursor: pointer;
+          display: inherit;
+          text-align: center;
           &:focus, &:active {
             outline: none;
           }
 
           button {
-            font-family: $headings-font-family;
-            border: none;
             background-color: transparent;
             border-radius: 0;
-            padding-bottom: 3rem;
+            border: none;
             color: color(lightgrey);
             cursor: pointer;
             display: inline;
-            position: relative;
-            overflow: hidden;;
+            font-family: $headings-font-family;
             font-size: 1.2rem;
+            overflow: hidden;
+            padding-bottom: 3rem;
+            position: relative;
             &:focus, &:active {
               outline: none;
             }
 
             &:after {
-              content: "";
-              position: absolute;
-              z-index: -1;
-              right: 0;
-              width: 0;
-              bottom: 0;
               background: color(orange);
+              bottom: 0;
+              content: "";
               height: 5px;
-              transition-property: width;
+              position: absolute;
+              right: 0;
               transition-duration: 200ms;
+              transition-property: width;
               transition-timing-function: ease-out;
+              width: 0;
+              z-index: -1;
             }
           }
           &:hover {
@@ -126,12 +126,12 @@
   }
 
   &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background-color: rgba(color(blue), 0.9);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
