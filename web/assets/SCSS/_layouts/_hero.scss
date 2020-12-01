@@ -25,7 +25,7 @@
       }
     }
   }
-  .grid-layout {
+  .grid {
     z-index: 2;
     &.slider {
       padding: 4rem 0;
@@ -43,7 +43,7 @@
             outline: none;
           }
           * {
-            color: color(white);
+            color: var(--light);
           }
           .button {
             margin-top: 4rem;
@@ -74,7 +74,7 @@
             background-color: transparent;
             border-radius: 0;
             padding-bottom: 3rem;
-            color: color(lightgrey);
+            color: var(--grey);
             cursor: pointer;
             display: inline;
             position: relative;
@@ -91,7 +91,7 @@
               right: 0;
               width: 0;
               bottom: 0;
-              background: color(orange);
+              background: var(--tertiary);
               height: 5px;
               transition-property: width;
               transition-duration: 200ms;
@@ -100,18 +100,18 @@
           }
           &:hover {
             button {
-              color: color(white);
+              color: var(--light);
 
               span {
-                color: color(orange);
+                color: var(--tertiary);
               }
             }
           }
           &.slick-current {
             button {
-              color: color(white);
+              color: var(--light);
               span {
-                color: color(orange);
+                color: var(--tertiary);
               }
               &:after {
                 left: 0;
@@ -132,6 +132,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(color(blue), 0.9);
+    background-color: var(--primary);
+    opacity: 0.9;
   }
 }

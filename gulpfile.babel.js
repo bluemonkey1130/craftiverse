@@ -36,7 +36,7 @@ const dirs = {
 };
 
 const sassPaths = {
-    src: `${dirs.src}/scss/style.scss`,
+    src: `${dirs.src}/scss/global.scss`,
     dest: `${dirs.dest}`
 };
 

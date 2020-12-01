@@ -33,6 +33,7 @@
     "babel-register": "^6.26.0",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
+    "gorko": "^0.2.3",
     "hover.css": "^2.3.2",
     "slick-carousel": "^1.8.1",
     "video.js": "^7.8.4",
