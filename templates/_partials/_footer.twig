@@ -1,0 +1,49 @@
+<footer class="footer grid-row">
+    <div class="grid align-wide contact pad-top-400 pad-bottom-400">
+        <div class="block">
+            {% set destination = footer.channelLinkDestination.one() %}
+            <h3><a href="{{ destination.url }}" class="nav-link button">{{ footer.channelLinkText }}</a></h3>
+            {{ footer.address }}
+        </div>
+        <nav class="nav">
+            {% set destination = services.channelLinkDestination.one() %}
+            <h3><a href="{{ destination.url }}" class="nav-link button">{{ services.channelLinkText }}</a></h3>
+            <ul>
+                {% for link in services.navigation %}
+                    {% set destination = link.linkDestination.one() %}
+                    <li><a href="{{ destination.url }}"
+                           class="nav-link button">{{ link.linkText }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <nav class="nav">
+            {% set destination = caseStudies.channelLinkDestination.one() %}
+            <h3><a href="{{ destination.url }}" class="nav-link button">{{ caseStudies.channelLinkText }}</a></h3>
+            <ul>
+                {% for link in caseStudies.navigation %}
+                    {% set destination = link.linkDestination.one() %}
+                    <li><a href="{{ destination.url }}"
+                           class="nav-link button">{{ link.linkText }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+    <div class="grid align-wide strapline">
+        <div class="block">
+            {{ footer.richText }}
+        </div>
+        <nav class="nav">
+            {% for link in footer.navigation %}
+                {% set destination = link.linkDestination.one() %}
+                <a href="{{ destination.url }}"
+                   class="nav-link button">{{ link.linkText }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</footer>
