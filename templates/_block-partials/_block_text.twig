@@ -1,7 +1,9 @@
 <div class="grid">
     <div class="center-large align-center">
         <div class="stack">
-            {{ block.text }}
+            {% if block.text|length %}
+                {{ block.text }}
+            {% endif %}
             {% set destination = block.buttonDestination.one() %}
             <a class="button call-to-action" href="{{ destination.url }}">{{ block.button }}</a>
         </div>
