@@ -1,0 +1,54 @@
+* {
+  max-width: var(--measure);
+}
+html,
+body,
+div,
+header,
+nav,
+main,
+section,
+footer,
+form,
+ul,
+article,
+.grid-row,
+iframe,
+canvas,
+grid-l,
+reel-l,
+stack-l,
+cover-l,
+frame-l,
+box-l,
+sidebar-l,
+switcher-l,
+cluster-l,
+video{
+  max-width: none;
+}
+img,figure{
+  max-width: 100%;
+}
+//max-width:measure
+.max-width\:measure {
+  max-width: var(--measure);
+}
+//max-width:measure/2
+.max-width\:measure\/2 {
+  max-width: calc(var(--measure) / 2);
+}
+//max-width:measure*1/5
+.max-width\:measure\*1\/5 {
+  max-width: calc(var(--measure) * 1.5) !important;
+}
+//max-width:measure*2
+.max-width\:measure\*2 {
+  max-width: calc(var(--measure) * 2) !important;
+}
+.align-center{
+  *:not(figure){
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

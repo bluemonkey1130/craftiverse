@@ -1,13 +1,13 @@
 #hero {
   grid-template-rows: 1fr 50px;
   #my-video {
-    grid-column: 1 / span 14;
     grid-row: 1 / span 2;
-    height: 90vh;
-    max-height: 85vh;
+    grid-column: 1 / span 14;
     object-fit: cover;
-    overflow: hidden;
     width: 100%;
+    max-height: 85vh;
+    overflow: hidden;
+    height: 90vh;
 
     video{
       transform: scale(1.7);
@@ -25,15 +25,15 @@
       }
     }
   }
-  .grid-layout {
+  .grid {
     z-index: 2;
     &.slider {
-      align-items: center;
-      display: inline-flex;
-      grid-row: 1;
-      grid-template-rows: 1fr 50px;
-      justify-content: center;
       padding: 4rem 0;
+      grid-template-rows: 1fr 50px;
+      grid-row: 1;
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
       .slick-list {
         .content {
           margin: 0 auto;
@@ -43,7 +43,7 @@
             outline: none;
           }
           * {
-            color: color(white);
+            color: var(--light);
           }
           .button {
             margin-top: 4rem;
@@ -60,58 +60,58 @@
         padding: 0;
 
         .tab-link {
+          text-align: center;
+          display: inherit;
           align-items: center;
           cursor: pointer;
-          display: inherit;
-          text-align: center;
           &:focus, &:active {
             outline: none;
           }
 
           button {
+            font-family: $headings-font-family;
+            border: none;
             background-color: transparent;
             border-radius: 0;
-            border: none;
-            color: color(lightgrey);
+            padding-bottom: 3rem;
+            color: var(--grey);
             cursor: pointer;
             display: inline;
-            font-family: $headings-font-family;
-            font-size: 1.2rem;
-            overflow: hidden;
-            padding-bottom: 3rem;
             position: relative;
+            overflow: hidden;;
+            font-size: 1.2rem;
             &:focus, &:active {
               outline: none;
             }
 
             &:after {
-              background: color(orange);
-              bottom: 0;
               content: "";
-              height: 5px;
               position: absolute;
-              right: 0;
-              transition-duration: 200ms;
-              transition-property: width;
-              transition-timing-function: ease-out;
-              width: 0;
               z-index: -1;
+              right: 0;
+              width: 0;
+              bottom: 0;
+              background: var(--tertiary);
+              height: 5px;
+              transition-property: width;
+              transition-duration: 200ms;
+              transition-timing-function: ease-out;
             }
           }
           &:hover {
             button {
-              color: color(white);
+              color: var(--light);
 
               span {
-                color: color(orange);
+                color: var(--tertiary);
               }
             }
           }
           &.slick-current {
             button {
-              color: color(white);
+              color: var(--light);
               span {
-                color: color(orange);
+                color: var(--tertiary);
               }
               &:after {
                 left: 0;
@@ -126,12 +126,13 @@
   }
 
   &:after {
-    background-color: rgba(color(blue), 0.9);
     content: '';
-    height: 100%;
-    left: 0;
     position: absolute;
-    top: 0;
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    opacity: 0.9;
   }
 }

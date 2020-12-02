@@ -1,0 +1,22 @@
+#shout-box {
+  background-color: var(--primary);
+  .grid {
+    //figure {
+    //  img {
+    //    object-fit: cover;
+    //    height: 100%;
+    //    width: 100%;
+    //  }
+    //}
+    .block {
+      //display: flex;
+      //flex-direction: column;
+      //justify-content: center;
+      //align-items: flex-start;
+
+      * {
+        color: var(--light);
+      }
+    }
+  }
+}

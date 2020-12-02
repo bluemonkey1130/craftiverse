@@ -1,9 +1,9 @@
 {% extends "index" %}
 {% block content %}
     <div id="hero" class="grid-row">
-        <div class="grid-layout standard has-one-column sixty slider">
+        <div class="grid slider">
             {% for slide in entry.heroSlides %}
-                <div class="content">
+                <div class="content center-large align-center">
                     {{ slide.slideText }}
                     {% set destination = entry.locationButtonDestination.one() %}
                     <a class="button standard" href="{{ destination.url }}">{{ slide.linkText }}</a>
@@ -11,7 +11,7 @@
 
             {% endfor %}
         </div>
-        <div class="grid-layout standard slider-nav">
+        <div class="grid slider-nav">
             {% for slide in entry.heroSlides %}
                 <div class="tab-link ">
                     <button><span>{{ loop.index }}. </span>{{ slide.slideTitle }}</button>
@@ -44,24 +44,17 @@
         <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
     </div>
 
-    <div class="grid-row">
-        <div class="grid-layout alignfull has-one-column ">
-            <div class="block center">
-
-            </div>
-        </div>
-    </div>
-
     <div id="text-section" class="grid-row">
-        <div class="grid-layout two-rem standard has-one-column sixty">
+        <div class="grid two-rem">
             <div class="block center">
                 {{ entry.richText }}
                 <a class="button call-to-action" href="">{{ entry.button }}</a>
             </div>
         </div>
     </div>
+
     <div id="tab-section" class="grid-row">
-        <div class="grid-layout two-rem standard has-three-columns ignore-tablet ignore-medium ignore-large-tablet eighty tabs">
+        <div class="tabs grid-layout has-three-columns narrow">
             {% set sections = craft.app.sections.allSections %}
 {#            {% dd sections %}#}
             {% for section in sections %}
@@ -70,7 +63,7 @@
                 {% endif %}
             {% endfor %}
         </div>
-        <div class="grid-layout two-rem alignwide slider-channels">
+        <div class="grid align-wide slider-channels">
             {% set posts = craft.entries.section(["blogPosts","servicePosts","caseStudiesPosts"]).all %}
             {% for post in posts %}
                 <div class="block channel-{{ post.sectionId  }}">
@@ -85,9 +78,10 @@
             {% endfor %}
         </div>
     </div>
-    <div id="cta-section" class="grid-row">
-        <div class="grid-layout four-rem alignwide has-two-columns">
-            <figure class="block">
+
+    <div id="shout-box" class="grid-row">
+        <div class="grid align-wide">
+            <figure class="block frame">
                 <img src="{{ entry.ctaImage.one().getUrl('fourthree') }}" alt="">
             </figure>
             <div class="block">
@@ -97,20 +91,22 @@
             </div>
         </div>
     </div>
+
     <div id="location-section" class="grid-row">
-        <div class="grid-layout alignwide has-one-column sixty">
-            <div class="block">
+        <div class="grid align-wide">
+            <div class="center-large align-center">
                 {{ entry.locationText }}
                 {% set destination = entry.locationButtonDestination.one() %}
                 <a class="button call-to-action" href="{{ destination.url }}">{{ entry.locationButtonText }}</a>
             </div>
         </div>
-        <div class="grid-layout alignwide has-one-column">
+        <div class="grid align-wide">
             <div class="block">
                 <div id="map"></div>
             </div>
         </div>
     </div>
+
     <script>
         // Initialize and add the map
         function initMap() {

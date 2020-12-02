@@ -7,7 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-sass": "npx sass web/assets/SCSS/global.scss web/assets/index.css --watch",
+    "build-sass": "npx sass web/assets/SCSS/global.scss src/index.css --style=compressed"
   },
   "author": "",
   "license": "ISC",
@@ -33,6 +35,7 @@
     "babel-register": "^6.26.0",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
+    "gorko": "^0.2.3",
     "hover.css": "^2.3.2",
     "slick-carousel": "^1.8.1",
     "video.js": "^7.8.4",
