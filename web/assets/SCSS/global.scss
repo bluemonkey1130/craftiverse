@@ -1,10 +1,8 @@
 // First up: config
 @import 'config';
 @import '_utilities/low-specificity';
-
-// Next: pull in gorko for design tokens
 @import '../../../node_modules/gorko/gorko.scss';
-
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 
 /* ------------------------------------
 	Imports
@@ -17,50 +15,50 @@
 /* ------------------------------------
 	Mixins
 -------------------------------------- */
-@import '01-Mixins/vendor-prefixes';
-@import '01-Mixins/crux';
-@import '01-Mixins/family-mixin';
-@import '01-Mixins/aspect';
-@import '01-Mixins/keyframes';
+@import '_mixins/vendor-prefixes';
+@import '_mixins/crux';
+@import '_mixins/family-mixin';
+@import '_mixins/aspect';
+@import '_mixins/keyframes';
 
 /* ------------------------------------
 	Base
 -------------------------------------- */
+@import '_base/reset';
 @import '_base/typography';
-@import '_base/grid';
-@import '_base/global';
+@import '_base/every-layout';
 
 /* ------------------------------------
    Utilities
 -------------------------------------- */
 @import '_utilities/radius';
 @import '_utilities/forms';
-@import '_utilities/buttons';
-
 
 /* ------------------------------------
 	Layouts Partials
 -------------------------------------- */
-//@import '_layout_partials/flow';
-//@import '_layout_partials/the_cluster';
-//@import '_layout_partials/sidebar';
-//@import '_layout_partials/stack';
-//@import '_layout_partials/box';
-//@import '_layout_partials/center';
-//@import '_layout_partials/the-frame';
-//@import '_layout_partials/splitter';
-//@import '_layout_partials/switcher';
-//@import '_layout_partials/cover';
-//@import '_layout_partials/reel';
-//@import '_layout_partials/wrapper';
-
+@import '_layout_partials/buttons';
+@import '_layout_partials/grid';
+@import '_layout_partials/flow';
+@import '_layout_partials/the_cluster';
+@import '_layout_partials/sidebar';
+@import '_layout_partials/stack';
+@import '_layout_partials/box';
+@import '_layout_partials/center';
+@import '_layout_partials/the-frame';
+@import '_layout_partials/splitter';
+@import '_layout_partials/switcher';
+@import '_layout_partials/cover';
+@import '_layout_partials/reel';
+@import '_layout_partials/wrapper';
 
 /* ------------------------------------
 	Layouts
 -------------------------------------- */
 @import '_layouts/header';
 @import '_layouts/hero';
-@import '_layouts/home';
+@import '_layouts/text';
+@import '_layouts/tabs';
+@import '_layouts/shout-box';
+@import '_layouts/location';
 @import '_layouts/footer';
-
-

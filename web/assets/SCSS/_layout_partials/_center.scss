@@ -6,8 +6,8 @@
   /* ↓ Only affect horizontal margins */
   margin-left: auto;
   margin-right: auto;
-
-  &.center-large{
-    max-width: calc(var(--measure)*1.5);
-  }
+}
+.center-large{
+  @extend .center-l;
+  max-width: calc(var(--measure)*1.5);
 }

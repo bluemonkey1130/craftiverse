@@ -1,20 +1,6 @@
-#text-section {
-
-
-  .grid {
-    .block {
-      //text-align: center;
-    }
-  }
-}
-
 #tab-section {
-
-
   div {
     &.tabs {
-
-
       a {
         text-align: center;
         transition-property: all;
@@ -89,45 +75,6 @@
 
           }
         }
-      }
-    }
-  }
-}
-
-#cta-section {
-  background-color: var(--primary);
-  .grid {
-    figure {
-      img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
-    }
-    .block {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-
-      * {
-        color: var(--light);
-      }
-    }
-  }
-}
-
-#location-section {
-  margin: 4rem 0;
-
-  .grid {
-    .block {
-      text-align: center;
-
-      #map {
-        margin-top: 4rem;
-        width: 100%;
-        height: 500px;
       }
     }
   }

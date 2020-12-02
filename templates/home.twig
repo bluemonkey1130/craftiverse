@@ -1,9 +1,9 @@
 {% extends "index" %}
 {% block content %}
     <div id="hero" class="grid-row">
-        <div class="grid sixty slider">
+        <div class="grid slider">
             {% for slide in entry.heroSlides %}
-                <div class="content">
+                <div class="content center-large align-center">
                     {{ slide.slideText }}
                     {% set destination = entry.locationButtonDestination.one() %}
                     <a class="button standard" href="{{ destination.url }}">{{ slide.linkText }}</a>
@@ -52,6 +52,7 @@
             </div>
         </div>
     </div>
+
     <div id="tab-section" class="grid-row">
         <div class="tabs grid-layout has-three-columns narrow">
             {% set sections = craft.app.sections.allSections %}
@@ -77,9 +78,10 @@
             {% endfor %}
         </div>
     </div>
-    <div id="cta-section" class="grid-row">
+
+    <div id="shout-box" class="grid-row">
         <div class="grid align-wide">
-            <figure class="block">
+            <figure class="block frame">
                 <img src="{{ entry.ctaImage.one().getUrl('fourthree') }}" alt="">
             </figure>
             <div class="block">
@@ -89,9 +91,10 @@
             </div>
         </div>
     </div>
+
     <div id="location-section" class="grid-row">
         <div class="grid align-wide">
-            <div class="block">
+            <div class="center-large align-center">
                 {{ entry.locationText }}
                 {% set destination = entry.locationButtonDestination.one() %}
                 <a class="button call-to-action" href="{{ destination.url }}">{{ entry.locationButtonText }}</a>
@@ -103,6 +106,7 @@
             </div>
         </div>
     </div>
+
     <script>
         // Initialize and add the map
         function initMap() {
