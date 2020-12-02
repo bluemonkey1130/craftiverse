@@ -3,11 +3,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 5;
-    background-color: color(white);
+    background-color: var(--light);
     grid-template-columns: 1fr 150px 1fr;
     grid-template-rows: 1fr;
 
-    .grid-layout {
+    .grid {
       align-items: stretch;
 
       nav {
@@ -29,7 +29,7 @@ header {
           &:hover {
             text-decoration: none;
             transition: border ease-in 200ms;
-            border-bottom: 5px solid color(orange);
+            border-bottom: 5px solid var(--tertiary);
           }
         }
       }
@@ -41,7 +41,7 @@ header {
           text-decoration: none;
         }
         .fas {
-          background: color(lightblue);
+          background: var(--primary-shade);
           margin: 2rem auto;
           padding: 1rem 2rem;
         }

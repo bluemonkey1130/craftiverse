@@ -6,7 +6,7 @@
     <title>{{ siteName }}</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="{{ siteUrl }}assets/style.css">
+    <link rel="stylesheet" href="{{ siteUrl }}assets/index.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdUOKXNaY_aFRCYWD20YhD6XVhbhrqGzw&callback=initMap&libraries=&v=beta&map_ids=7a0d902c2626c4f5" defer ></script>    <!-- jsdelivr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
@@ -17,7 +17,7 @@
 <body data-barba="wrapper">
 
 <header class="header grid-row">
-    <div class="grid-layout alignfull">
+    <div class="grid align-full">
         <nav class="nav">
             {% for link in header.navigation|slice(0, 3) %}
                 {% set destination = link.linkDestination.one() %}
@@ -45,7 +45,7 @@
     </article>
 </main>
 <footer class="footer grid-row">
-    <div class="grid-layout alignwide contact">
+    <div class="grid align-wide contact">
         <div class="block">
             {% set destination = footer.channelLinkDestination.one() %}
             <h3><a href="{{ destination.url }}" class="nav-link button">{{ footer.channelLinkText }}</a></h3>
@@ -80,7 +80,7 @@
             <a href=""><i class="fab fa-facebook"></i></a>
         </div>
     </div>
-    <div class="grid-layout alignwide has-two-columns strapline">
+    <div class="grid align-wide strapline">
         <div class="block">
             {{ footer.richText }}
         </div>

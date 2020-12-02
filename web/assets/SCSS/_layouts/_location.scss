@@ -1,0 +1,15 @@
+#location-section {
+  margin: 4rem 0;
+
+  .grid {
+    .block {
+      text-align: center;
+
+      #map {
+        margin-top: 4rem;
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}
