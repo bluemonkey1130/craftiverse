@@ -1,10 +1,10 @@
 {% extends "index" %}
 {% block content %}
-    <article class="grid-row">
-        {% for block in entry.flexible.all() %}
 
+    {% for block in entry.flexible.all() %}
+        <section id="{{ block.type.handle |kebab }}" class="grid-row gap-bottom-500">
             {% include ('_block-partials/_block_'~ block.type.handle~'.twig') %}
+        </section>
+    {% endfor %}
 
-        {% endfor %}
-    </article>
 {% endblock %}
