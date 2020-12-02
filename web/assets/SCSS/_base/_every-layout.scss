@@ -1,6 +1,7 @@
 * {
   max-width: var(--measure);
 }
+
 html,
 body,
 div,
@@ -24,31 +25,45 @@ box-l,
 sidebar-l,
 switcher-l,
 cluster-l,
-video{
+video {
   max-width: none;
 }
-img,figure{
+
+img, figure {
   max-width: 100%;
 }
+
 //max-width:measure
 .max-width\:measure {
   max-width: var(--measure);
 }
+
 //max-width:measure/2
 .max-width\:measure\/2 {
   max-width: calc(var(--measure) / 2);
 }
+
 //max-width:measure*1/5
 .max-width\:measure\*1\/5 {
   max-width: calc(var(--measure) * 1.5) !important;
 }
+
 //max-width:measure*2
 .max-width\:measure\*2 {
   max-width: calc(var(--measure) * 2) !important;
 }
-.align-center{
-  *:not(figure){
+
+.align-center {
+  *:not(figure) {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+a.abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

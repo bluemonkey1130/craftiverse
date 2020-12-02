@@ -1,0 +1,10 @@
+{% extends "index" %}
+{% block content %}
+    <article class="grid-row">
+        {% for block in entry.flexible.all() %}
+
+            {% include ('_block-partials/_block_'~ block.type.handle~'.twig') %}
+
+        {% endfor %}
+    </article>
+{% endblock %}

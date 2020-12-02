@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: flexible
+name: Flexible
+propagationMethod: all
+siteSettings:
+  a444331c-5954-495c-be67-635a384e66c6:
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/flexible
+    uriFormat: 'flexible/{slug}'
+type: channel

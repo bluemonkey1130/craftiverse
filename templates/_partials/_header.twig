@@ -1,0 +1,21 @@
+<header class="header grid-row">
+    <div class="grid align-full">
+        <nav class="nav">
+            {% for link in header.navigation|slice(0, 3) %}
+                {% set destination = link.linkDestination.one() %}
+                <a href="{{ destination.url }}"
+                   class="nav-link">{{ link.linkText }}</a>
+            {% endfor %}
+        </nav>
+        <a href="{{ siteUrl }}" class="logo">
+            <i class="fas fa-image"></i>
+        </a>
+        <nav class="nav">
+            {% for link in header.navigation|slice(3, 6) %}
+                {% set destination = link.linkDestination.one() %}
+                <a href="{{ destination.url }}"
+                   class="nav-link"><p>{{ link.linkText }}</p></a>
+            {% endfor %}
+        </nav>
+    </div>
+</header>

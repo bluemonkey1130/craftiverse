@@ -12,7 +12,6 @@
   box-sizing: content-box;
   /* ↓ The maximum width is the maximum measure */
   width: calc(var(--measure) / 4);
-
   &:hover{
     text-decoration: none;
   }
